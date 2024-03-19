@@ -1,40 +1,40 @@
-
 {% load static %}
 
 <nav class="absolute w-full z-[100]">
-    <div class="container mx-auto">
+  <div class="container mx-auto">
+    <nav class="sm:hidden pt-3 pb-2">
+      <ul class="flex justify-center gap-10">
+        <li class="hover:text-zinc-300"><a href="/">Home</a></li>
+        <li class="hover:text-zinc-300"><a href="/profile">Profile</a></li>
+        <li class="hover:text-zinc-300"><a href="/projects">Portfolio</a></li>
+        <li class="hover:text-zinc-300"><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="justify-between items-center h-10 p-10 hidden sm:flex">
+      <!-- images -->
+      <h1 class="h-5">tanjusay</h1>
 
-        <nav class="sm:hidden pt-3 pb-2">
-            <ul class="flex justify-center gap-10">
-                <li class="hover:text-zinc-300"><a href="/">Home</a></li>
-                <li class="hover:text-zinc-300"><a href="/profile">Profile</a></li>
-                <li class="hover:text-zinc-300"><a href="/projects">Portfolio</a></li>
-                <li class="hover:text-zinc-300"><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-        <nav class="justify-between items-center h-10 p-10 hidden sm:flex">
-            <!-- images -->
-            <h1 class="h-5">tanjusay</h1>
-  
-            <!-- menu -->
-            <ul class="flex gap-10">
-                <li class="hover:text-zinc-300"><a href="/">Home</a></li>
-                <li class="hover:text-zinc-300"><a href="/profile">Profile</a></li>
-                <li class="hover:text-zinc-300"><a href="/projects">Portfolio</a></li>
-                <li class="hover:text-zinc-300"><a href="/contact">Contact</a></li>
-            </ul>
-  
-            <!-- auth -->
-            <div class="">
-                <a class="px-5 py-1 bg-gray-200 rounded-full ring-2 ring-gray-300 hover:bg-gray-300"
-                    href="#">log in</a>
-                <a class="px-5 py-1 bg-gray-200 rounded-full ring-2 ring-gray-300 hover:bg-gray-300"
-                href="#">sign up</a>
-            </div>
-        </nav>
-    </div>
-  </nav>
+      <!-- menu -->
+      <ul class="flex gap-10">
+        <li class="hover:text-zinc-300"><a href="/">Home</a></li>
+        <li class="hover:text-zinc-300"><a href="/profile">Profile</a></li>
+        <li class="hover:text-zinc-300"><a href="/projects">Portfolio</a></li>
+        <li class="hover:text-zinc-300"><a href="/contact">Contact</a></li>
+      </ul>
 
-
-
-
+      <!-- auth -->
+      <div class="">
+        <a
+          class="px-5 py-1 bg-gray-200 rounded-full ring-2 ring-gray-300 hover:bg-gray-300"
+          href="#"
+          >log in</a
+        >
+        <a
+          class="px-5 py-1 bg-gray-200 rounded-full ring-2 ring-gray-300 hover:bg-gray-300"
+          href="#"
+          >sign up</a
+        >
+      </div>
+    </nav>
+  </div>
+</nav>
