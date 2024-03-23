@@ -9,15 +9,18 @@
     <title>{% block title %}a django portfolio{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'src/styles.css' %}" />
     <script defer src="{% static 'src/htmx.min.js' %}"></script>
+    
   </head>
 
   <body class="">
     <div
-      class="h-screen text-zinc-600 bg-gradient-to-b from-zinc-50 to-zinc-100 overflow-y-scroll">
+      class="h-screen text-zinc-600 bg-gradient-to-b from-zinc-50 to-zinc-100 overflow-y-scroll overflow-x-hidden">
       {% include "base/nav.html" %}
 
+      <div>
       {% block content %} {% endblock content %}
 
+      </div>
     </div>
   </body>
 </html>
