@@ -10,12 +10,13 @@
       <!-- Your Sidebar Content -->
       <div class="p-4 ">
         <h1 class="text-4xl font-semibold">Tanjusay</h1>
-        <ul class="mt-4">
-          <li class="mb-2"><a href="/" class="block hover:text-indigo-400">Home</a></li>
-          <li class="mb-2"><a href="/profile/" class="block hover:text-indigo-400">About</a></li>
-          <li class="mb-2"><a href="/projects/" class="block hover:text-indigo-400">Portfolio</a></li>
-          <li class="mb-2"><a href="/contact/" class="block hover:text-indigo-400">Contact</a></li>
-        </ul>
+      <ul class="mt-4">
+        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/" hx-target="#content">Home</a></li>
+        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/profile/" hx-target="#content">About</a></li>
+        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/projects/" hx-target="#content">Portfolio</a></li>
+        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/contact/" hx-target="#content">Contact</a></li>
+      </ul>
+
       </div>
     </div>
 
