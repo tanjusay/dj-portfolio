@@ -3,6 +3,10 @@
 <div class="bg-gray-950 text-white">
 
   <div class="flex overflow-hidden bg-gray-200">
+    
+      <!-- Sidebar content goes here -->
+    </div>
+
     <!-- Sidebar -->
     <div
       class="absolute bg-gray-800 sm:w-5/6 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-500 z-10"
@@ -11,10 +15,10 @@
       <div class="p-4 ">
         <h1 class="text-4xl font-semibold">Tanjusay</h1>
       <ul class="mt-4">
-        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/" hx-target="#content">Home</a></li>
-        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/profile/" hx-target="#content">About</a></li>
-        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/projects/" hx-target="#content">Portfolio</a></li>
-        <li class="mb-2"><a class="block hover:text-indigo-400" hx-get="/contact/" hx-target="#content">Contact</a></li>
+        <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="/" hx-target="#content">Home</button></li>
+        <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="profile" hx-target="#content">About</button></li>
+        <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="projects" hx-target="#content">Portfolio</button></li>
+        <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="contact" hx-target="#content">Contact</button></li>
       </ul>
 
       </div>
@@ -23,7 +27,7 @@
     <!-- Content -->
     <div class="flex-1 flex flex-col overflow-hidden w-screen absolute text-white">
       <!-- Navbar -->
-      <div class="bg-slate-50 bg-opacity-5 shadow">
+      <div class="bg-gray-900 shadow">
         <div class="container mx-auto">
           <div class="flex justify-between items-center py-4 px-2">
             <h1 class="text-xl font-semibold">Animated Drawer</h1>
@@ -37,10 +41,10 @@
             </button>
 
             <ul class="mt-4 flex gap-3 sm:hidden md:inline-flex">
-              <li class="mb-2"><a href="/" class="block hover:text-indigo-400">Home</a></li>
-              <li class="mb-2"><a href="/profile/" class="block hover:text-indigo-400">About</a></li>
-              <li class="mb-2"><a href="/projects/" class="block hover:text-indigo-400">Portfolio</a></li>
-              <li class="mb-2"><a href="/contact/" class="block hover:text-indigo-400">Contact</a></li>
+              <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="/" hx-target="#content">Home</button></li>
+              <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="profile" hx-target="#content">About</button></li>
+              <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="projects" hx-target="#content">Portfolio</button></li>
+              <li class="mb-2"><button class="block hover:text-indigo-400" hx-get="contact" hx-target="#content">Contact</button></li>
             </ul>
 
 
@@ -50,7 +54,5 @@
       <!-- Content Body -->
    
   </div>
-
-  <script defer src="{% static 'src/nav-slider.js' %}"></script>
 
 </div>
